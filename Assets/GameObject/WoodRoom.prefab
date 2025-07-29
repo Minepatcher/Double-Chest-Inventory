@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1042119444357383
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4630844833711129}
+  - component: {fileID: 114578484672291237}
+  - component: {fileID: 114720718003964252}
+  - component: {fileID: 114946058216599167}
+  - component: {fileID: 114888964111940877}
+  - component: {fileID: 114089075526214976}
+  m_Layer: 0
+  m_Name: WoodRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4630844833711129
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042119444357383}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114578484672291237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042119444357383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 54
+  radius: 15
+  dontBlockOtherSpawns: 0
+--- !u!114 &114720718003964252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042119444357383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 1
+  shapeFrequency: 1
+  roomFillSize: 0.2
+  pathFillSize: 0.2
+  defineShapeByRooms: 1
+  rectShaped: 1
+  tiles: 9001000040010000
+  roomShapeSpawnTemplate: {fileID: 0}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114946058216599167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042119444357383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 1
+    roomType: 1
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 3
+      max: 4
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 4
+    roomType: 64
+    amount:
+      min: 3
+      max: 7
+    size:
+      min: 3
+      max: 3
+    spacing:
+      min: 1
+      max: 2
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+--- !u!114 &114888964111940877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042119444357383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations:
+  - placement: 2
+    roomType: -1
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 0
+    intersectablePaths: 0
+    canIntersectRooms: 0
+    intersectableRooms: 0
+    straightPaths: 1
+    pathStartRoomType: 0
+    pathEndRoomType: 0
+    width: 1.42
+    helpNotes:
+--- !u!114 &114089075526214976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042119444357383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: -1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: fcc685516754bf040bf0c5fd30cf6016, type: 2}
+  pathTemplates:
+  - flags: -1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 0b4e9eb9a3ed14243b2520baea2b772c, type: 2}

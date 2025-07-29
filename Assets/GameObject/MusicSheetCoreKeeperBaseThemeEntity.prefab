@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1432425640480714
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4001733628162005}
+  - component: {fileID: 114046104097710123}
+  - component: {fileID: 114944175910442917}
+  - component: {fileID: 114433477585829679}
+  - component: {fileID: 114049842205724523}
+  m_Layer: 0
+  m_Name: MusicSheetCoreKeeperBaseThemeEntity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4001733628162005
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432425640480714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114046104097710123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432425640480714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1814889704, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  objectInfo:
+    objectID: 1401
+    initialAmount: 1
+    variation: 0
+    variationIsDynamic: 0
+    variationToToggleTo: 0
+    objectType: 0
+    tags: 1a000000
+    rarity: 0
+    level: 0
+    sellValue: -1
+    buyValueMultiplier: 1
+    icon: {fileID: 21300000, guid: f16d01e56fe7de74da8fa39f896da0e8, type: 2}
+    iconOffset: {x: 0, y: 0}
+    iconSkinAsset: {fileID: 0}
+    smallIcon: {fileID: 21300000, guid: 69e1e6aaec526504d83bd2af08766a0c, type: 2}
+    isStackable: 1
+    prefabTileSize: {x: 1, y: 1}
+    prefabCornerOffset: {x: 0, y: 0}
+    centerIsAtEntityPosition: 0
+    additionalSprites: []
+    tileset: 0
+    tileType: 0
+    prefabInfos:
+    - prefab: {fileID: 114682965388098238, guid: ca6e7330a25a2c449b092206b452f208, type: 2}
+      ecsPrefab: {fileID: 1432425640480714}
+    craftingSettings:
+      canOnlyUseAnyMaterialsWithTag: 0
+      iconType: 0
+    requiredObjectsToCraft:
+    - objectID: 1640
+      amount: 5
+    craftingTime: 2
+    appearInMapUI: 0
+    mapColor: {r: 0, g: 0, b: 0, a: 0}
+    isCustomScenePrefab: 0
+    languageGenders: []
+  optionalPreviewPrefab: {fileID: 0}
+--- !u!114 &114944175910442917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432425640480714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 735037745, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  harpTrack:
+    value: 783078489
+  fluteTrack:
+    value: 1602316940
+  celloTrack:
+    value: 318212899
+  ocarinaTrack:
+    value: -23825800
+  drumkitTrack:
+    value: 1234341144
+  pianoTrack:
+    value: 594112318
+--- !u!114 &114433477585829679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432425640480714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2043779946, guid: eafa8b18b36bc2c13769445b0c6b65b1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114049842205724523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432425640480714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2043779946, guid: eafa8b18b36bc2c13769445b0c6b65b1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:

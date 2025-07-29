@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1190986170183509
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4266046694861567}
+  - component: {fileID: 114917670383311288}
+  - component: {fileID: 114137688799451992}
+  - component: {fileID: 114313354041130356}
+  - component: {fileID: 114091802375900671}
+  - component: {fileID: 114920317460185839}
+  - component: {fileID: 114847170358150606}
+  - component: {fileID: 114447693900801529}
+  - component: {fileID: 114925390373207978}
+  m_Layer: 0
+  m_Name: GalaxiteShovelEntity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4266046694861567
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190986170183509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114917670383311288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190986170183509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1814889704, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  objectInfo:
+    objectID: 38
+    initialAmount: 650
+    variation: 0
+    variationIsDynamic: 1
+    variationToToggleTo: 0
+    objectType: 600
+    tags: 1900000022000000
+    rarity: 2
+    level: 0
+    sellValue: -1
+    buyValueMultiplier: 1
+    icon: {fileID: 21300000, guid: 5156269ce85bf09498ba0adfd09056d6, type: 2}
+    iconOffset: {x: 0, y: -0.1875}
+    iconSkinAsset: {fileID: 0}
+    smallIcon: {fileID: 21300000, guid: 5156269ce85bf09498ba0adfd09056d6, type: 2}
+    isStackable: 0
+    prefabTileSize: {x: 3, y: 3}
+    prefabCornerOffset: {x: 0, y: 0}
+    centerIsAtEntityPosition: 0
+    additionalSprites:
+    - {fileID: 21300000, guid: 5156269ce85bf09498ba0adfd09056d6, type: 2}
+    - {fileID: 21300000, guid: 280ad86d119aeaf499383acdc647ad31, type: 2}
+    tileset: 0
+    tileType: 0
+    prefabInfos:
+    - prefab: {fileID: 0}
+      ecsPrefab: {fileID: 1190986170183509}
+    craftingSettings:
+      canOnlyUseAnyMaterialsWithTag: 0
+      iconType: 0
+    requiredObjectsToCraft:
+    - objectID: 1031
+      amount: 18
+    - objectID: 1007
+      amount: 18
+    craftingTime: 1
+    appearInMapUI: 0
+    mapColor: {r: 0, g: 0, b: 0, a: 0}
+    isCustomScenePrefab: 0
+    languageGenders: []
+  optionalPreviewPrefab: {fileID: 0}
+--- !u!114 &114137688799451992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190986170183509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465117922, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  dontCalculateValuesFromLevel: 0
+  givesConditionsWhenHeldInHand: 1
+  isArmor: 0
+  givesConditionsWhenEquipped:
+  - id: 174
+    valueMultiplier: 1.1
+    value: 201
+  level: {fileID: 114091802375900671}
+  conditionsTable: {fileID: 11400000, guid: 6cf1f375d15a54543990902bfa483718, type: 2}
+--- !u!114 &114313354041130356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190986170183509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -963874711, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  damage: 111
+  damageMultiplier: 0.45
+  isRange: 0
+  isMagic: 0
+  level: {fileID: 114091802375900671}
+  entityMono: {fileID: 114917670383311288}
+  cooldown: {fileID: 0}
+--- !u!114 &114091802375900671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190986170183509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1462739941, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  areaLevel: 62
+  level: 14
+  entityMono: {fileID: 114917670383311288}
+  forceGenerateLevelEntities: 0
+--- !u!114 &114920317460185839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190986170183509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1699310947, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  baseHitColliderSize: 1.5
+  extraHitColliderReachSize: 0
+  overrideAnimation:
+  quickHit: 0
+  isBigSpearWeapon: 0
+  isBigSwingWeapon: 0
+  isMoveFreelyWeapon: 0
+  moveSpeedMultiplier: 1
+  skipAnticipationAnimation: 0
+  lungeForce: 0
+  tileDamageAOE: 0
+  attackFXType: 0
+  arcAngle: 1
+--- !u!114 &114847170358150606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190986170183509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -955471450, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  durability: 650
+  durabilityMultiplier: 6.5
+  maxDurability: 650
+  repairMultiplier: 0.3
+  reinforceCostMultiplier: 1
+  entityMono: {fileID: 114917670383311288}
+--- !u!114 &114447693900801529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190986170183509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 782416644, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0.2688679, g: 0.79738075, b: 1, a: 1}
+  intensity: 0.5
+--- !u!114 &114925390373207978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190986170183509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1293511809, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  StartOnSmallestSize: 0

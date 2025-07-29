@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1185305354453776
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4591960846705446}
+  - component: {fileID: 114817534458080429}
+  - component: {fileID: 114115363247520427}
+  - component: {fileID: 114131791174666291}
+  - component: {fileID: 114781921028599408}
+  - component: {fileID: 114269636576023330}
+  - component: {fileID: 114214526566158770}
+  m_Layer: 0
+  m_Name: AlienStructureEventTerminals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4591960846705446
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185305354453776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114817534458080429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185305354453776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 1518
+  radius: 51
+  dontBlockOtherSpawns: 0
+--- !u!114 &114115363247520427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185305354453776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 0
+  shapeFrequency: 1
+  roomFillSize: 0.67
+  pathFillSize: 1
+  defineShapeByRooms: 1
+  rectShaped: 0
+  tiles: a101000067010000
+  roomShapeSpawnTemplate: {fileID: 0}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114131791174666291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185305354453776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 1
+    roomType: 1
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 21
+      max: 28
+    spacing:
+      min: 2
+      max: 2
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 4
+    roomType: 128
+    amount:
+      min: 4
+      max: 10
+    size:
+      min: 1
+      max: 35
+    spacing:
+      min: 7
+      max: 40
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+  - placement: 4
+    roomType: 256
+    amount:
+      min: 3
+      max: 5
+    size:
+      min: 2
+      max: 11
+    spacing:
+      min: 3
+      max: 4
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+  - placement: 4
+    roomType: 512
+    amount:
+      min: 3
+      max: 5
+    size:
+      min: 4
+      max: 8
+    spacing:
+      min: 4
+      max: 9
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 0
+    intersectableRooms: -1
+    helpNotes:
+--- !u!114 &114781921028599408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185305354453776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations:
+  - placement: 2
+    roomType: -1
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 1
+    intersectablePaths: 0
+    canIntersectRooms: 0
+    intersectableRooms: 0
+    straightPaths: 1
+    pathStartRoomType: 0
+    pathEndRoomType: 0
+    width: 1.5
+    helpNotes:
+--- !u!114 &114269636576023330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185305354453776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: 512
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 56015aad062761f4eadbc87df6379937, type: 2}
+  - flags: 256
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 0499de95a47f2c24db1759083944c00b, type: 2}
+  pathTemplates:
+  - flags: 65023
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 24d4b4889171f3549afc80f5cb16e1ec, type: 2}
+--- !u!114 &114214526566158770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185305354453776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1929273357, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  groups:
+  - roomType: 1
+    numberToSpawn:
+      min: 1
+      max: 1
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Event Terminals/EventTerminalCrystal1.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Event Terminals/EventTerminalCrystal2.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Event Terminals/EventTerminalCrystal3.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Event Terminals/EventTerminalCrystal4.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Event Terminals/EventTerminalCrystal5.unity
+  - roomType: 128
+    numberToSpawn:
+      min: 2
+      max: 5
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Alien Structure/AlienComms1.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Alien Structure/AlienPillar1.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Alien Structure/AlienRingRoom1.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Alien Structure/AlienRingRoom2.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Alien Structure/AlienRingRoom3.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Alien Structure/AlienCrossPath1.unity
+  - roomType: 256
+    numberToSpawn:
+      min: 2
+      max: 3
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Alien Structure/AlienFloatingNode1.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Alien Structure/AlienPath1.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Alien Structure/AlienMaterialDepot1.unity
+  scenesTable: {fileID: 11400000, guid: e229ac315f3fe754abb743f00e5c30fe, type: 2}

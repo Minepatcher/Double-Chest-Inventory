@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1679519761884816
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4286231526972506}
+  - component: {fileID: 114030966334922219}
+  - component: {fileID: 114511306048041875}
+  - component: {fileID: 114326131760314415}
+  - component: {fileID: 114698155403563816}
+  - component: {fileID: 114618924404797760}
+  - component: {fileID: 114007985030815684}
+  m_Layer: 0
+  m_Name: HydraBoneToothEntity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4286231526972506
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679519761884816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114030966334922219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679519761884816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1814889704, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  objectInfo:
+    objectID: 8365
+    initialAmount: 1
+    variation: 0
+    variationIsDynamic: 1
+    variationToToggleTo: 0
+    objectType: 105
+    tags: 1900000022000000
+    rarity: 2
+    level: 0
+    sellValue: -1
+    buyValueMultiplier: 1
+    icon: {fileID: 21300000, guid: cbc1376d36e5bec4bac7dfae0cf9ca84, type: 2}
+    iconOffset: {x: 0, y: 0}
+    iconSkinAsset: {fileID: 0}
+    smallIcon: {fileID: 21300000, guid: 1630041929bd7fd4da316398572167a3, type: 2}
+    isStackable: 0
+    prefabTileSize: {x: 1, y: 1}
+    prefabCornerOffset: {x: 0, y: 0}
+    centerIsAtEntityPosition: 0
+    additionalSprites: []
+    tileset: 0
+    tileType: 0
+    prefabInfos:
+    - prefab: {fileID: 0}
+      ecsPrefab: {fileID: 1679519761884816}
+    craftingSettings:
+      canOnlyUseAnyMaterialsWithTag: 0
+      iconType: 0
+    requiredObjectsToCraft:
+    - objectID: 1008
+      amount: 10
+    - objectID: 1613
+      amount: 10
+    craftingTime: 0
+    appearInMapUI: 0
+    mapColor: {r: 0, g: 0, b: 0, a: 0}
+    isCustomScenePrefab: 0
+    languageGenders: []
+  optionalPreviewPrefab: {fileID: 0}
+--- !u!114 &114511306048041875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679519761884816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465117922, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  dontCalculateValuesFromLevel: 0
+  givesConditionsWhenHeldInHand: 0
+  isArmor: 0
+  givesConditionsWhenEquipped:
+  - id: 222
+    valueMultiplier: 0.5
+    value: 4
+  - id: 22
+    valueMultiplier: 1.5
+    value: 246
+  level: {fileID: 114326131760314415}
+  conditionsTable: {fileID: 11400000, guid: 6cf1f375d15a54543990902bfa483718, type: 2}
+--- !u!114 &114326131760314415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679519761884816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1462739941, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  areaLevel: 70
+  level: 16
+  entityMono: {fileID: 114030966334922219}
+  forceGenerateLevelEntities: 0
+--- !u!114 &114698155403563816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679519761884816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1263341004, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  sharedCooldownIdentifier: 0
+  cooldown: 0
+--- !u!114 &114618924404797760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679519761884816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1754845523, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  mechanic: 3
+  windupTiers: 1
+  windupAreaSizeMultiplier: 1
+  extraDamageMultiplier: 1
+  projectileSpeedMultiplier: 1
+  windupTime: 0.7
+  knockback: 0
+  weaponEffectType: 0
+  useTerm: 0
+  minionToSpawn: 0
+--- !u!114 &114007985030815684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679519761884816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 628344197, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  mechanic: 0
+  mechanicValue: 0
+  mechanicMultiplier: 10
+  level: {fileID: 114326131760314415}
+  entityMono: {fileID: 114030966334922219}
+  cooldown: {fileID: 0}

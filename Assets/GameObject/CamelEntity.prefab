@@ -1,0 +1,978 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1503341194312538
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4772689984115351}
+  - component: {fileID: 114077529801294571}
+  - component: {fileID: 114842871589532930}
+  - component: {fileID: 114077473564897820}
+  - component: {fileID: 114838009953072163}
+  - component: {fileID: 114727135759785925}
+  - component: {fileID: 114263303105413278}
+  - component: {fileID: 114128022845750967}
+  - component: {fileID: 114184532959375136}
+  - component: {fileID: 114016604396091913}
+  - component: {fileID: 114888364264129299}
+  - component: {fileID: 114375624291004223}
+  - component: {fileID: 114646335556326477}
+  - component: {fileID: 114934953392164104}
+  - component: {fileID: 114931315733769129}
+  - component: {fileID: 114751681810305391}
+  - component: {fileID: 114843189917545713}
+  - component: {fileID: 114376403676627186}
+  - component: {fileID: 114734203689470691}
+  - component: {fileID: 114082266435060762}
+  - component: {fileID: 114907544878835654}
+  - component: {fileID: 114185874581190784}
+  - component: {fileID: 114135570667293149}
+  - component: {fileID: 114003077589771516}
+  - component: {fileID: 114961417345234836}
+  - component: {fileID: 114220000585818511}
+  - component: {fileID: 114531713383014169}
+  - component: {fileID: 114359159470158512}
+  - component: {fileID: 114713947139818808}
+  - component: {fileID: 114348498688894246}
+  - component: {fileID: 114747570431753167}
+  - component: {fileID: 114254358947453771}
+  - component: {fileID: 114275112359596808}
+  m_Layer: 0
+  m_Name: CamelEntity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4772689984115351
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114077529801294571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1814889704, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  objectInfo:
+    objectID: 1311
+    initialAmount: 1
+    variation: 0
+    variationIsDynamic: 1
+    variationToToggleTo: 0
+    objectType: 900
+    tags: 0800000020000000
+    rarity: 0
+    level: 0
+    sellValue: -1
+    buyValueMultiplier: 1
+    icon: {fileID: 21300000, guid: 371b51686a4f3e44cad2b80beb162f9e, type: 2}
+    iconOffset: {x: 0, y: 0}
+    iconSkinAsset: {fileID: 0}
+    smallIcon: {fileID: 21300000, guid: 22c896e900a66434ab0e776129f4ae34, type: 2}
+    isStackable: 0
+    prefabTileSize: {x: 1, y: 1}
+    prefabCornerOffset: {x: 0, y: 0}
+    centerIsAtEntityPosition: 0
+    additionalSprites: []
+    tileset: 0
+    tileType: 0
+    prefabInfos:
+    - prefab: {fileID: 114918292529073204, guid: 9a379c00265c1a0408eb098ae39092de, type: 2}
+      ecsPrefab: {fileID: 1503341194312538}
+    craftingSettings:
+      canOnlyUseAnyMaterialsWithTag: 0
+      iconType: 0
+    requiredObjectsToCraft: []
+    craftingTime: 0
+    appearInMapUI: 0
+    mapColor: {r: 0, g: 0, b: 0, a: 0}
+    isCustomScenePrefab: 0
+    languageGenders: []
+  optionalPreviewPrefab: {fileID: 0}
+--- !u!114 &114842871589532930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 775935493, guid: f8b40f5d7f8d7c18ee25ec4e04143ad5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  orientationSupport: 3
+  largeAnimationHistorySupport: 0
+--- !u!114 &114077473564897820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1278374231, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  speed: 10
+--- !u!114 &114838009953072163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1594252633, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  dontCalculateHealthFromLevel: 1
+  overrideStartHealth: 0
+  normalizedOverrideStartHealth: 1
+  startHealth: 300
+  maxHealth: 300
+  maxHealthMultiplier: 1
+  hasHealthRegeneration: 1
+  healInCombatAsWell: 0
+  healthIncreasePercentPerFiveSeconds: 50
+  healDelayAfterLeavingCombat: 5
+  level: {fileID: 114082266435060762}
+--- !u!114 &114727135759785925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1798704345, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114263303105413278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 178800199, guid: 548e3dd2d27c1e2d0bdf82f0889cb8a7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  playIdleAnimation: 1
+--- !u!114 &114128022845750967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 282287656, guid: 548e3dd2d27c1e2d0bdf82f0889cb8a7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  overrideTimeBeforeDestroy: 0
+  timeBeforeDestroy: 0
+  timeBeforeLootDrop: 0
+  skipDeathAnimation: 0
+--- !u!114 &114184532959375136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2046304025, guid: e9c46758b721c46dac5f2259b9351b17, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_ShapeType: 2
+  m_PrimitiveCenter:
+    x: 0
+    y: 0.4
+    z: 0
+  m_PrimitiveSize:
+    x: 0.75
+    y: 0.75
+    z: 0.75
+  m_PrimitiveOrientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_Capsule:
+    Height: 0.75
+    Radius: 0.375
+    Axis: 2
+  m_Cylinder:
+    Height: 0.75
+    Radius: 0.375
+    Axis: 2
+  m_CylinderSideCount: 20
+  m_SphereRadius: 0.375
+  m_MinimumSkinnedVertexWeight: 0.1
+  m_ConvexHullGenerationParameters:
+    m_SimplificationTolerance: 0.015
+    m_BevelRadius: 0.05
+    m_MinimumAngle: 2.5000002
+  m_CustomMesh: {fileID: 0}
+  m_ForceUnique: 0
+  m_Material:
+    m_SupportsTemplate: 1
+    m_Template: {fileID: 0}
+    m_CollisionResponse:
+      m_Override: 0
+      m_Value: 1
+    m_Friction:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 0
+    m_Restitution:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 1
+    m_BelongsToCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 0
+        Category01: 0
+        Category02: 0
+        Category03: 0
+        Category04: 1
+        Category05: 0
+        Category06: 0
+        Category07: 0
+        Category08: 0
+        Category09: 0
+        Category10: 0
+        Category11: 0
+        Category12: 0
+        Category13: 0
+        Category14: 0
+        Category15: 0
+        Category16: 0
+        Category17: 0
+        Category18: 0
+        Category19: 0
+        Category20: 0
+        Category21: 0
+        Category22: 0
+        Category23: 0
+        Category24: 0
+        Category25: 0
+        Category26: 0
+        Category27: 0
+        Category28: 0
+        Category29: 0
+        Category30: 0
+        Category31: 0
+    m_CollidesWithCategories:
+      m_Override: 1
+      m_Value:
+        Category00: 1
+        Category01: 0
+        Category02: 0
+        Category03: 0
+        Category04: 1
+        Category05: 0
+        Category06: 0
+        Category07: 0
+        Category08: 1
+        Category09: 0
+        Category10: 0
+        Category11: 0
+        Category12: 0
+        Category13: 0
+        Category14: 0
+        Category15: 0
+        Category16: 0
+        Category17: 1
+        Category18: 0
+        Category19: 0
+        Category20: 0
+        Category21: 0
+        Category22: 0
+        Category23: 0
+        Category24: 0
+        Category25: 0
+        Category26: 0
+        Category27: 0
+        Category28: 0
+        Category29: 0
+        Category30: 0
+        Category31: 0
+    m_CustomMaterialTags:
+      m_Override: 0
+      m_Value:
+        Tag00: 0
+        Tag01: 0
+        Tag02: 0
+        Tag03: 0
+        Tag04: 0
+        Tag05: 0
+        Tag06: 0
+        Tag07: 0
+    m_SerializedVersion: 1
+  m_SerializedVersion: 1
+--- !u!114 &114016604396091913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2046304025, guid: e9c46758b721c46dac5f2259b9351b17, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_ShapeType: 2
+  m_PrimitiveCenter:
+    x: 0
+    y: 0.4
+    z: 0
+  m_PrimitiveSize:
+    x: 0.75
+    y: 0.75
+    z: 0.75
+  m_PrimitiveOrientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_Capsule:
+    Height: 0.75
+    Radius: 0.375
+    Axis: 2
+  m_Cylinder:
+    Height: 0.75
+    Radius: 0.375
+    Axis: 2
+  m_CylinderSideCount: 20
+  m_SphereRadius: 0.375
+  m_MinimumSkinnedVertexWeight: 0.1
+  m_ConvexHullGenerationParameters:
+    m_SimplificationTolerance: 0.015
+    m_BevelRadius: 0.05
+    m_MinimumAngle: 2.5000002
+  m_CustomMesh: {fileID: 0}
+  m_ForceUnique: 0
+  m_Material:
+    m_SupportsTemplate: 1
+    m_Template: {fileID: 0}
+    m_CollisionResponse:
+      m_Override: 0
+      m_Value: 3
+    m_Friction:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 0
+    m_Restitution:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 2
+    m_BelongsToCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 0
+        Category01: 0
+        Category02: 0
+        Category03: 1
+        Category04: 0
+        Category05: 0
+        Category06: 0
+        Category07: 0
+        Category08: 0
+        Category09: 0
+        Category10: 0
+        Category11: 0
+        Category12: 0
+        Category13: 0
+        Category14: 0
+        Category15: 0
+        Category16: 0
+        Category17: 0
+        Category18: 0
+        Category19: 0
+        Category20: 0
+        Category21: 0
+        Category22: 0
+        Category23: 0
+        Category24: 0
+        Category25: 0
+        Category26: 0
+        Category27: 0
+        Category28: 0
+        Category29: 0
+        Category30: 0
+        Category31: 0
+    m_CollidesWithCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 0
+        Category01: 0
+        Category02: 0
+        Category03: 1
+        Category04: 0
+        Category05: 0
+        Category06: 0
+        Category07: 0
+        Category08: 0
+        Category09: 0
+        Category10: 0
+        Category11: 0
+        Category12: 0
+        Category13: 0
+        Category14: 0
+        Category15: 0
+        Category16: 0
+        Category17: 0
+        Category18: 0
+        Category19: 0
+        Category20: 0
+        Category21: 0
+        Category22: 0
+        Category23: 0
+        Category24: 0
+        Category25: 0
+        Category26: 0
+        Category27: 0
+        Category28: 0
+        Category29: 0
+        Category30: 0
+        Category31: 0
+    m_CustomMaterialTags:
+      m_Override: 0
+      m_Value:
+        Tag00: 0
+        Tag01: 0
+        Tag02: 0
+        Tag03: 0
+        Tag04: 0
+        Tag05: 0
+        Tag06: 0
+        Tag07: 0
+    m_SerializedVersion: 1
+  m_SerializedVersion: 1
+--- !u!114 &114888364264129299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -327389624, guid: e9c46758b721c46dac5f2259b9351b17, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_MotionType: 0
+  m_Smoothing: 0
+  m_Mass: 15
+  m_LinearDamping: 10
+  m_AngularDamping: Infinity
+  m_InitialLinearVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_InitialAngularVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_GravityFactor: 1
+  m_OverrideDefaultMassDistribution: 1
+  m_CenterOfMass:
+    x: 0
+    y: 0
+    z: 0
+  m_Orientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_InertiaTensor:
+    x: Infinity
+    y: Infinity
+    z: Infinity
+  m_WorldIndex: 0
+  m_CustomTags:
+    Tag00: 0
+    Tag01: 0
+    Tag02: 0
+    Tag03: 0
+    Tag04: 0
+    Tag05: 0
+    Tag06: 0
+    Tag07: 0
+--- !u!114 &114375624291004223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1928767635, guid: ec628a550dac988fecc0ebcb3605f68c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  DefaultGhostMode: 0
+  SupportedGhostModes: 3
+  OptimizationMode: 0
+  Importance: 4
+  prefabId: 74bf250e48b2e8c40ae82c08220b72c5
+  HasOwner: 0
+  SupportAutoCommandTarget: 0
+  TrackInterpolationDelay: 0
+  GhostGroup: 0
+  UsePreSerialization: 0
+  DontUsePredictionBackup: 0
+--- !u!114 &114646335556326477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 117220441, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  minWalkDistance: 3
+  maxWalkDistance: 10
+  maxWalkDuration: 20
+  minIdleDuration: 5
+  maxIdleDuration: 8
+  movementSpeedMultiplier: 1
+--- !u!114 &114934953392164104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1777273319, guid: 548e3dd2d27c1e2d0bdf82f0889cb8a7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disabled: 0
+  skipVisibilityCheck: 0
+  moveSpeedMultiplier: 1.5
+  chaseAtDistance: 8
+  ignoreLowColliders: 0
+  preChaseDuration: 0
+  endChaseDuration: 0
+  idleDuration: 0
+  idleCooldown: 0
+  distanceToStartSideStepping: 0
+  distanceToKeepNoiseDisabled: 0
+  minDistanceToKeep: 0.9
+  maxDistanceToKeep: 0.9
+  obstacleAvoidDistance: 0
+  preferPathFind: 0
+  neverStopChasing: 0
+  needPathToChase: 1
+  chaseHeldObjects: []
+  belongsToShape: {fileID: 114184532959375136}
+--- !u!114 &114931315733769129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 622530669, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  detectsLayer:
+    Category00: 1
+    Category01: 1
+    Category02: 0
+    Category03: 1
+    Category04: 0
+    Category05: 0
+    Category06: 1
+    Category07: 0
+    Category08: 0
+    Category09: 0
+    Category10: 0
+    Category11: 0
+    Category12: 0
+    Category13: 0
+    Category14: 0
+    Category15: 0
+    Category16: 0
+    Category17: 0
+    Category18: 0
+    Category19: 0
+    Category20: 0
+    Category21: 0
+    Category22: 0
+    Category23: 0
+    Category24: 0
+    Category25: 0
+    Category26: 0
+    Category27: 0
+    Category28: 0
+    Category29: 0
+    Category30: 0
+    Category31: 0
+  radius: 8
+--- !u!114 &114751681810305391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1224447016, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wantsToAttackTags:
+  cantAttackTags:
+  eatsTags: 1e000000
+--- !u!114 &114843189917545713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -694010661, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  cantBeAffectedByAuras: 1
+  cantBeAffectedByEnvironment: 0
+  cantBeAffectedByHealing: 0
+  dontShowStatsTextOnItem: 0
+  initialConditions: []
+  level: {fileID: 114082266435060762}
+  conditionsTable: {fileID: 11400000, guid: 6cf1f375d15a54543990902bfa483718, type: 2}
+--- !u!114 &114376403676627186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -926307767, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  faction: 4
+--- !u!114 &114734203689470691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1089278989, guid: 548e3dd2d27c1e2d0bdf82f0889cb8a7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  duration: 0.2
+--- !u!114 &114082266435060762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1462739941, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  areaLevel: 0
+  level: 2
+  entityMono: {fileID: 114077529801294571}
+  forceGenerateLevelEntities: 0
+--- !u!114 &114907544878835654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1805834901, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114185874581190784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1751214620, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  actAsDestructibleWhileAboveHealthThreshold: 0
+  dontBlockPlayerMovement: 0
+--- !u!114 &114135570667293149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 827266785, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  distanceToStartIdle: 1
+--- !u!114 &114003077589771516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -163262979, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114961417345234836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -857358543, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114220000585818511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1018308397, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  craftingType: 4
+  showLoopEffectOnOutputSlot: 0
+  canCraftObjects:
+  - objectID: 1651
+    amount: 1
+    craftingConsumesEntityAmount: 1
+    entityAmountToConsume: 2
+    allowCraftingNone: 0
+    craftingTime: 0
+  includeCraftedObjectsFromBuildings: []
+--- !u!114 &114531713383014169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 947790122, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114359159470158512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 310491880, guid: 548e3dd2d27c1e2d0bdf82f0889cb8a7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  distanceToEat: 1
+  duration: 0.55
+  eatPostDuration: 1.65
+  maxFoodUntilFull: 4
+--- !u!114 &114713947139818808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 466673081, guid: 548e3dd2d27c1e2d0bdf82f0889cb8a7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  mealsToTrigger: 30
+  minDistanceToBreed: 2
+  babyType: 1312
+  mutationChance: 0.4
+  mutationWeights:
+  - variation: 0
+    weight: 2
+  - variation: 1
+    weight: 2
+  - variation: 2
+    weight: 1
+  - variation: 3
+    weight: 1
+  - variation: 4
+    weight: 0.8
+--- !u!114 &114348498688894246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1626740080, guid: fbbadae9385c14e32dcf65cf1eba05dd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114747570431753167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1739311503, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  prefabTileSize: {x: 1, y: 1}
+  prefabCornerOffset: {x: 0, y: 0}
+  centerIsAtEntityPosition: 0
+  variationToPlace: 0
+  canBePlacedOnPlayer: 0
+  canBePlacedOnAnyWalkableTile: 1
+  canBePlacedOnWater: 0
+  canBePlacedOnLava: 0
+  canBePlacedOnPit: 0
+  canBePlacedOnBlockingObjects: 0
+  canBePlacedOnLowColliders: 0
+  dontDestroyObjectIfInvalidPlacement: 0
+  canBePlacedOnImmuneTiles: 0
+  dontBlockRoots: 0
+  canBePlacedOnObjects:
+  canNotBePlacedOnObjects:
+  hasVariationsThatCanBePlacedOnWalls: 0
+  canPlaceOnSideOfWall: 0
+  wallSideVariationStartsOnIndex1: 0
+  blocksHangingWallObjects: 0
+  appearInMapUI: 0
+  mapColor: {r: 0, g: 0, b: 0, a: 0}
+  alignWithPlayerDirection: 0
+--- !u!114 &114254358947453771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2043779946, guid: eafa8b18b36bc2c13769445b0c6b65b1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114275112359596808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503341194312538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -135843945, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  hasLootTable: 0
+  lootTableID: 0
+  hasCustomLoot: 1
+  customLoot:
+    chance: 1
+    Values:
+    - lootDropID: 1651
+      amount: 4
+      multiplayerAmountAdditionScaling: 0
+  hasSeasonalLoot: 0
+  seasonalLootDrops:
+    lootDrops: []
+  hasLootDropsOnUse: 0
+  onUseLootDrops:
+    lootTableID: 0
+    spawnEffects: 0
+    lootDrops: []
+  hasLootDropsOnTakingDamage: 0
+  lootDropsWhenDamaged:
+    healthPercentageDamageToDeal: 0
+    minHealthPercentageToDropLoot: 0
+    damageToDealToDropLoot: 0
+    minHealthToDropLoot: 0
+    dropsLoot: 0
+    instantiateEntity: 0
+    minSpawnOffset:
+      x: 0
+      y: 0
+    maxSpawnOffset:
+      x: 0
+      y: 0
+    maxLimitToDropInNearbyArea: 0

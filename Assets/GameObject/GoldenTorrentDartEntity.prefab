@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1869040661326795
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4876263410342951}
+  - component: {fileID: 114639934958300121}
+  - component: {fileID: 114456663549485256}
+  - component: {fileID: 114798328731596445}
+  - component: {fileID: 114649237273435921}
+  - component: {fileID: 114824833726491838}
+  m_Layer: 0
+  m_Name: GoldenTorrentDartEntity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4876263410342951
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869040661326795}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114639934958300121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869040661326795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1814889704, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  objectInfo:
+    objectID: 9721
+    initialAmount: 1
+    variation: 0
+    variationIsDynamic: 0
+    variationToToggleTo: 0
+    objectType: 1100
+    tags: 1600000018000000
+    rarity: 1
+    level: 0
+    sellValue: 10
+    buyValueMultiplier: 1
+    icon: {fileID: 21300000, guid: c31c1bedb7efdd747829582234adeb9e, type: 2}
+    iconOffset: {x: 0, y: 0}
+    iconSkinAsset: {fileID: 0}
+    smallIcon: {fileID: 21300000, guid: ddaae9fa09efdc6488d5a59d257c6c82, type: 2}
+    isStackable: 1
+    prefabTileSize: {x: 1, y: 1}
+    prefabCornerOffset: {x: 0, y: 0}
+    centerIsAtEntityPosition: 0
+    additionalSprites: []
+    tileset: 0
+    tileType: 0
+    prefabInfos:
+    - prefab: {fileID: 0}
+      ecsPrefab: {fileID: 1869040661326795}
+    craftingSettings:
+      canOnlyUseAnyMaterialsWithTag: 0
+      iconType: 0
+    requiredObjectsToCraft: []
+    craftingTime: 0
+    appearInMapUI: 0
+    mapColor: {r: 0, g: 0, b: 0, a: 0}
+    isCustomScenePrefab: 0
+    languageGenders: []
+  optionalPreviewPrefab: {fileID: 0}
+--- !u!114 &114456663549485256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869040661326795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1882760820, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  brightestColor: {r: 0.9686275, g: 0.9294118, b: 0.77647066, a: 1}
+  brightColor: {r: 0.909804, g: 0.8470589, b: 0.627451, a: 1}
+  darkColor: {r: 0.86666673, g: 0.5529412, b: 0.59607846, a: 1}
+  darkestColor: {r: 0.6392157, g: 0.3372549, b: 0.63529414, a: 1}
+  turnsIntoFood: 9507
+  ingredientType: 2
+--- !u!114 &114798328731596445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869040661326795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1717633301, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Values:
+  - conditionData:
+      conditionID: 8
+      duration: 0
+      value: 11
+      valueMultiplier: 1
+    conditionDataWhenCooked:
+      conditionID: 8
+      duration: 0
+      value: 22
+      valueMultiplier: 1
+  - conditionData:
+      conditionID: 5
+      duration: 20
+      value: 57
+      valueMultiplier: 1
+    conditionDataWhenCooked:
+      conditionID: 5
+      duration: 20
+      value: 57
+      valueMultiplier: 1
+  - conditionData:
+      conditionID: 0
+      duration: 600
+      value: 1
+      valueMultiplier: 1
+    conditionDataWhenCooked:
+      conditionID: 15
+      duration: 600
+      value: 11
+      valueMultiplier: 1
+  level: {fileID: 114649237273435921}
+  conditionsTable: {fileID: 11400000, guid: 6cf1f375d15a54543990902bfa483718, type: 2}
+--- !u!114 &114649237273435921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869040661326795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1462739941, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  areaLevel: 60
+  level: 11
+  entityMono: {fileID: 114639934958300121}
+  forceGenerateLevelEntities: 0
+--- !u!114 &114824833726491838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869040661326795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -140432111, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:

@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1850400305613972
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4734165216887408}
+  - component: {fileID: 114838423269336073}
+  - component: {fileID: 114532923178500991}
+  - component: {fileID: 114626700152216021}
+  - component: {fileID: 114034698952610207}
+  - component: {fileID: 114358521980569602}
+  m_Layer: 0
+  m_Name: CavelingRuins
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4734165216887408
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850400305613972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114838423269336073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850400305613972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 29
+  radius: 34
+  dontBlockOtherSpawns: 0
+--- !u!114 &114532923178500991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850400305613972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 0
+  shapeFrequency: 2
+  roomFillSize: 0.59
+  pathFillSize: 0
+  defineShapeByRooms: 1
+  rectShaped: 0
+  tiles:
+  roomShapeSpawnTemplate: {fileID: 11400000, guid: 3f36efc3684247c47b947e8cf344d70e, type: 2}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114626700152216021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850400305613972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 1
+    roomType: 1
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 7
+      max: 7
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 4
+    roomType: 64
+    amount:
+      min: 11
+      max: 11
+    size:
+      min: 4
+      max: 9
+    spacing:
+      min: 1
+      max: 6
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+--- !u!114 &114034698952610207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850400305613972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations:
+  - placement: 2
+    roomType: -1
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 0
+    intersectablePaths: 0
+    canIntersectRooms: 0
+    intersectableRooms: 0
+    straightPaths: 1
+    pathStartRoomType: 0
+    pathEndRoomType: 0
+    width: 0
+    helpNotes:
+--- !u!114 &114358521980569602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850400305613972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: 8
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: a393c93bc68325a4b908f0675f015b57, type: 2}
+  - flags: 16
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: eb22a2b67e535e4459668dcf43c9e05d, type: 2}
+  pathTemplates:
+  - flags: -1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 2b2097835e6f5544aa8c4b19bf735dc2, type: 2}

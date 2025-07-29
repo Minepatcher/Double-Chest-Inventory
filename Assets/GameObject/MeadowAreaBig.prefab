@@ -1,0 +1,235 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1779248579055900
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4687207423162490}
+  - component: {fileID: 114868067934855567}
+  - component: {fileID: 114132699930858186}
+  - component: {fileID: 114551174557204638}
+  - component: {fileID: 114843157911099696}
+  - component: {fileID: 114913904702429824}
+  - component: {fileID: 114971546356284584}
+  m_Layer: 0
+  m_Name: MeadowAreaBig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4687207423162490
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779248579055900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114868067934855567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779248579055900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 86
+  radius: 40
+  dontBlockOtherSpawns: 0
+--- !u!114 &114132699930858186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779248579055900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 0.5
+  shapeFrequency: 1
+  roomFillSize: 0
+  pathFillSize: 0
+  defineShapeByRooms: 1
+  rectShaped: 0
+  tiles: 9f01000065010000
+  roomShapeSpawnTemplate: {fileID: 0}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114551174557204638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779248579055900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 1
+    roomType: 1
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 3
+      max: 7
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 4
+    roomType: 16
+    amount:
+      min: 5
+      max: 10
+    size:
+      min: 3
+      max: 7
+    spacing:
+      min: 1
+      max: 3
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+--- !u!114 &114843157911099696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779248579055900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations:
+  - placement: 3
+    roomType: -1
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 1
+    intersectablePaths: 0
+    canIntersectRooms: 0
+    intersectableRooms: 0
+    straightPaths: 0
+    pathStartRoomType: 0
+    pathEndRoomType: 0
+    width: 3.3
+    helpNotes:
+--- !u!114 &114913904702429824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779248579055900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: 1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: a4c8e78f076a7c44ba6803797bc07ee8, type: 2}
+  - flags: -1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: a4c8e78f076a7c44ba6803797bc07ee8, type: 2}
+  pathTemplates:
+  - flags: -1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 07c67d4f9c23a3c4eaba54a53517869f, type: 2}
+--- !u!114 &114971546356284584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779248579055900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1664008704, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  replacements:
+  - replaceID: 1300
+    replaceVariation:
+      hasValue: 0
+      value: 0
+    replaceWithID: 1300
+    advancedVariationControl: 1
+    variation:
+      min: 0
+      max: 0
+    weightedVariations:
+      value:
+      - value: 0
+        weight: 5
+      - value: 1
+        weight: 3
+      - value: 2
+        weight: 3
+      - value: 3
+        weight: 3
+      - value: 4
+        weight: 2
+  - replaceID: 1302
+    replaceVariation:
+      hasValue: 0
+      value: 0
+    replaceWithID: 1302
+    advancedVariationControl: 1
+    variation:
+      min: 0
+      max: 0
+    weightedVariations:
+      value:
+      - value: 0
+        weight: 5
+      - value: 1
+        weight: 3
+      - value: 2
+        weight: 3
+      - value: 3
+        weight: 3
+      - value: 4
+        weight: 2

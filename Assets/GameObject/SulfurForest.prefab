@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1937615074100346
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4696734573408730}
+  - component: {fileID: 114600633063129001}
+  - component: {fileID: 114453785833777048}
+  - component: {fileID: 114404728643725243}
+  - component: {fileID: 114980216651477668}
+  - component: {fileID: 114661625274055832}
+  m_Layer: 0
+  m_Name: SulfurForest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4696734573408730
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937615074100346}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114600633063129001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937615074100346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 273
+  radius: 45
+  dontBlockOtherSpawns: 1
+--- !u!114 &114453785833777048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937615074100346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 0
+  shapeFrequency: 1
+  roomFillSize: 0.1
+  pathFillSize: 1.08
+  defineShapeByRooms: 1
+  rectShaped: 0
+  tiles: b5010000
+  roomShapeSpawnTemplate: {fileID: 0}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114404728643725243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937615074100346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 2
+    roomType: 256
+    amount:
+      min: 2
+      max: 3
+    size:
+      min: 4
+      max: 10
+    spacing:
+      min: 2
+      max: 2
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 4
+    roomType: 128
+    amount:
+      min: 1
+      max: 12
+    size:
+      min: 5
+      max: 16
+    spacing:
+      min: 2
+      max: 2
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+--- !u!114 &114980216651477668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937615074100346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations:
+  - placement: 2
+    roomType: -1
+    amount:
+      min: 3
+      max: 5
+    canIntersectPaths: 1
+    intersectablePaths: -1
+    canIntersectRooms: 0
+    intersectableRooms: -1
+    straightPaths: 0
+    pathStartRoomType: 0
+    pathEndRoomType: 0
+    width: 4.06
+    helpNotes:
+--- !u!114 &114661625274055832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937615074100346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: 256
+    minimumSizeRequirement: 1
+    templates:
+    - {fileID: 11400000, guid: d63b0b2659e2b0c41acff4b09bfa6a09, type: 2}
+  - flags: 128
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 61a0f3f7f7788534eb52908e83183590, type: 2}
+  pathTemplates: []

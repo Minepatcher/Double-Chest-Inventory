@@ -1,0 +1,293 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1861730054620844
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4934428754564932}
+  - component: {fileID: 114965651517361315}
+  - component: {fileID: 114964565632364345}
+  - component: {fileID: 114974526312632566}
+  - component: {fileID: 114487714906435870}
+  - component: {fileID: 114056416702811400}
+  - component: {fileID: 114081839474079695}
+  m_Layer: 0
+  m_Name: ScarabBossArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4934428754564932
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861730054620844}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114965651517361315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861730054620844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 1
+  radius: 45
+  dontBlockOtherSpawns: 0
+--- !u!114 &114964565632364345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861730054620844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 0.26
+  shapeFrequency: 1.38
+  roomFillSize: 1.8
+  pathFillSize: 0
+  defineShapeByRooms: 1
+  rectShaped: 0
+  tiles: 9a0100004b010000
+  roomShapeSpawnTemplate: {fileID: 0}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114974526312632566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861730054620844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 1
+    roomType: 1
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 26
+      max: 26
+    spacing:
+      min: 2
+      max: 2
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 4
+    roomType: 16
+    amount:
+      min: 3
+      max: 3
+    size:
+      min: 14
+      max: 14
+    spacing:
+      min: 14
+      max: 14
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: 64
+    helpNotes:
+  - placement: 3
+    roomType: 4
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 5
+      max: 5
+    spacing:
+      min: 15
+      max: 15
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 3
+    roomType: 128
+    amount:
+      min: 4
+      max: 4
+    size:
+      min: 3
+      max: 6
+    spacing:
+      min: 11
+      max: 11
+    angle:
+      min: 0
+      max: 182
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 0
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 2
+    roomType: 64
+    amount:
+      min: 18
+      max: 18
+    size:
+      min: 5
+      max: 6
+    spacing:
+      min: 6
+      max: 6
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 0
+    intersectableRooms: -1
+    helpNotes:
+--- !u!114 &114487714906435870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861730054620844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations:
+  - placement: 2
+    roomType: 192
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 0
+    intersectablePaths: 64
+    canIntersectRooms: 1
+    intersectableRooms: 64
+    straightPaths: 0
+    pathStartRoomType: 64
+    pathEndRoomType: 64
+    width: 4.54
+    helpNotes:
+  - placement: 0
+    roomType: 257
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 0
+    intersectablePaths: 64
+    canIntersectRooms: 1
+    intersectableRooms: 192
+    straightPaths: 1
+    pathStartRoomType: 1
+    pathEndRoomType: 256
+    width: 1
+    helpNotes:
+--- !u!114 &114056416702811400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861730054620844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1929273357, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  groups:
+  - roomType: 1
+    numberToSpawn:
+      min: 1
+      max: 1
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/ScarabBossScene.unity
+  - roomType: 4
+    numberToSpawn:
+      min: 1
+      max: 1
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/WaypointScenes/WaypointRoomDesert.unity
+  - roomType: 272
+    numberToSpawn:
+      min: 3
+      max: 3
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Desert Scenes/ScarabTempleRoom1.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Desert Scenes/ScarabTempleRoom2.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Desert Scenes/ScarabTempleRoom3.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Desert Scenes/ScarabTempleRoom4.unity
+  scenesTable: {fileID: 11400000, guid: e229ac315f3fe754abb743f00e5c30fe, type: 2}
+--- !u!114 &114081839474079695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861730054620844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: 64
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 8a0f0f6eed3f6d440b7ad00c6037aba3, type: 2}
+  - flags: 128
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 60189d73b2fb7524994a73d5f6fd9746, type: 2}
+  pathTemplates:
+  - flags: 197
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: ada972cb66fba624393c0dbaf30479f1, type: 2}
+    - {fileID: 11400000, guid: f13fd75f632f63b41bdbbc72b9e4629a, type: 2}

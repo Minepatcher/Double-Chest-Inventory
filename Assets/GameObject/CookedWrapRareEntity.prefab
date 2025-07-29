@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1080312666558391
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4610783649321624}
+  - component: {fileID: 114610327340591082}
+  - component: {fileID: 114380844796811034}
+  - component: {fileID: 114886516138798169}
+  m_Layer: 0
+  m_Name: CookedWrapRareEntity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4610783649321624
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080312666558391}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114610327340591082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080312666558391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1814889704, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  objectInfo:
+    objectID: 9553
+    initialAmount: 1
+    variation: 0
+    variationIsDynamic: 1
+    variationToToggleTo: 0
+    objectType: 1100
+    tags: 12000000
+    rarity: 2
+    level: 0
+    sellValue: -1
+    buyValueMultiplier: 1
+    icon: {fileID: 21300000, guid: 5e0b83f528618d243bdd0ca1122c5ed4, type: 2}
+    iconOffset: {x: 0, y: 0}
+    iconSkinAsset: {fileID: 0}
+    smallIcon: {fileID: 21300000, guid: 6325f4a30f36da7429e8ed268248ed38, type: 2}
+    isStackable: 1
+    prefabTileSize: {x: 1, y: 1}
+    prefabCornerOffset: {x: 0, y: 0}
+    centerIsAtEntityPosition: 0
+    additionalSprites: []
+    tileset: 0
+    tileType: 0
+    prefabInfos:
+    - prefab: {fileID: 0}
+      ecsPrefab: {fileID: 1080312666558391}
+    craftingSettings:
+      canOnlyUseAnyMaterialsWithTag: 0
+      iconType: 0
+    requiredObjectsToCraft: []
+    craftingTime: 10
+    appearInMapUI: 0
+    mapColor: {r: 0, g: 0, b: 0, a: 0}
+    isCustomScenePrefab: 0
+    languageGenders:
+    - language: 15
+      gender: 1
+    - language: 14
+      gender: 1
+    - language: 21
+      gender: 2
+    - language: 28
+      gender: 1
+    - language: 34
+      gender: 1
+  optionalPreviewPrefab: {fileID: 0}
+--- !u!114 &114380844796811034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080312666558391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1829958836, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  rareVersion: 9553
+  epicVersion: 9578
+  ingredient1BrightestColor: {r: 0.13725491, g: 0.5647059, b: 0.16078432, a: 1}
+  ingredient1BrightColor: {r: 0.039215688, g: 0.427451, b: 0.15294118, a: 1}
+  ingredient1DarkColor: {r: 0.058823533, g: 0.3372549, b: 0.18823531, a: 1}
+  ingredient1DarkestColor: {r: 0.027450982, g: 0.23529413, b: 0.19215688, a: 1}
+  ingredient2BrightestColor: {r: 0.92549026, g: 0.7568628, b: 0.7490196, a: 1}
+  ingredient2BrightColor: {r: 0.8235295, g: 0.6039216, b: 0.48627454, a: 1}
+  ingredient2DarkColor: {r: 0.70980394, g: 0.5019608, b: 0.2784314, a: 1}
+  ingredient2DarkestColor: {r: 0.5686275, g: 0.35686275, b: 0.14901961, a: 1}
+--- !u!114 &114886516138798169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080312666558391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1717633301, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Values:
+  - conditionData:
+      conditionID: 8
+      duration: 0
+      value: 15
+      valueMultiplier: 0
+    conditionDataWhenCooked:
+      conditionID: 8
+      duration: 0
+      value: 15
+      valueMultiplier: 0
+  level: {fileID: 0}
+  conditionsTable: {fileID: 11400000, guid: 6cf1f375d15a54543990902bfa483718, type: 2}

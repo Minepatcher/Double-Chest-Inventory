@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1375598712289557
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4251057992678076}
+  - component: {fileID: 114996890053932150}
+  - component: {fileID: 114757598916305132}
+  - component: {fileID: 114191877932681252}
+  - component: {fileID: 114493176261976121}
+  - component: {fileID: 114401698116284955}
+  - component: {fileID: 114180467229348628}
+  - component: {fileID: 114785692063233422}
+  - component: {fileID: 114232121082662536}
+  - component: {fileID: 114721327897226693}
+  - component: {fileID: 114034542256700123}
+  m_Layer: 0
+  m_Name: WoodCrossbowEntity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4251057992678076
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375598712289557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114996890053932150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375598712289557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1814889704, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  objectInfo:
+    objectID: 9130
+    initialAmount: 255
+    variation: 0
+    variationIsDynamic: 1
+    variationToToggleTo: 0
+    objectType: 501
+    tags: 1900000022000000
+    rarity: 0
+    level: 0
+    sellValue: -1
+    buyValueMultiplier: 1
+    icon: {fileID: 21300000, guid: 7a3140f5ce7efe3428004877fc5a2843, type: 2}
+    iconOffset: {x: 0, y: 0}
+    iconSkinAsset: {fileID: 0}
+    smallIcon: {fileID: 21300000, guid: 654224038691e5141a8fc71f80d47431, type: 2}
+    isStackable: 0
+    prefabTileSize: {x: 1, y: 1}
+    prefabCornerOffset: {x: 0, y: 0}
+    centerIsAtEntityPosition: 0
+    additionalSprites:
+    - {fileID: 21300000, guid: 690dddd2d91063f40b5810e0b0e6bcb0, type: 2}
+    tileset: 0
+    tileType: 0
+    prefabInfos:
+    - prefab: {fileID: 0}
+      ecsPrefab: {fileID: 1375598712289557}
+    craftingSettings:
+      canOnlyUseAnyMaterialsWithTag: 0
+      iconType: 0
+    requiredObjectsToCraft:
+    - objectID: 1610
+      amount: 15
+    - objectID: 1640
+      amount: 5
+    craftingTime: 1
+    appearInMapUI: 0
+    mapColor: {r: 0, g: 0, b: 0, a: 0}
+    isCustomScenePrefab: 0
+    languageGenders: []
+  optionalPreviewPrefab: {fileID: 0}
+--- !u!114 &114757598916305132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375598712289557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -955471450, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  durability: 255
+  durabilityMultiplier: 1.7
+  maxDurability: 255
+  repairMultiplier: 0.5
+  reinforceCostMultiplier: 1
+  entityMono: {fileID: 114996890053932150}
+--- !u!114 &114191877932681252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375598712289557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465117922, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  dontCalculateValuesFromLevel: 0
+  givesConditionsWhenHeldInHand: 1
+  isArmor: 0
+  givesConditionsWhenEquipped: []
+  level: {fileID: 114785692063233422}
+  conditionsTable: {fileID: 11400000, guid: 6cf1f375d15a54543990902bfa483718, type: 2}
+--- !u!114 &114493176261976121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375598712289557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1263341004, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  sharedCooldownIdentifier: 0
+  cooldown: 1
+--- !u!114 &114401698116284955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375598712289557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 606060924, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  projectileID: 9247
+  moveFreely: 0
+  recoilForce: 0
+  explosiveProjectileVariationID: 0
+  spawnRandomProjectile: 0
+  randomProjectiles:
+  spawnOffsetDistance: 0
+  extraProjectiles: 0
+  spreadAngle: 0
+  explosionSize: 0
+  pierceAtMaxWindup: 1
+  bounceAtMaxWindup: 0
+  mortarRaycastToTarget: 0
+  mortarTargetRange: 0
+--- !u!114 &114180467229348628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375598712289557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -963874711, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  damage: 47
+  damageMultiplier: 0.8
+  isRange: 1
+  isMagic: 0
+  level: {fileID: 114785692063233422}
+  entityMono: {fileID: 114996890053932150}
+  cooldown: {fileID: 114493176261976121}
+--- !u!114 &114785692063233422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375598712289557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1462739941, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  areaLevel: 0
+  level: 2
+  entityMono: {fileID: 114996890053932150}
+  forceGenerateLevelEntities: 0
+--- !u!114 &114232121082662536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375598712289557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1600091730, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  attackSoundId:
+    value: 0
+  impactSoundId:
+    value: 0
+  windupSound:
+    value: 1660810992
+  strongAttackSound:
+    value: -720043838
+--- !u!114 &114721327897226693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375598712289557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1754845523, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  mechanic: 1
+  windupTiers: 1
+  windupAreaSizeMultiplier: 1
+  extraDamageMultiplier: 1
+  projectileSpeedMultiplier: 1
+  windupTime: 1
+  knockback: 0
+  weaponEffectType: 0
+  useTerm: 2
+  minionToSpawn: 0
+--- !u!114 &114034542256700123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375598712289557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1410114798, guid: 3392f4c23e1d8662d749dabb2361ee02, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  <EffectType>k__BackingField: 2
+  <Weapon>k__BackingField:
+    <StartPosition>k__BackingField: 2
+    <EndPosition>k__BackingField: 3
+    <Strength>k__BackingField: 1
+  <Vibration>k__BackingField:
+    <Position>k__BackingField: 0
+    <Amplitude>k__BackingField: 0
+    <Frequency>k__BackingField: 0
+  <MultiplePositionVibration>k__BackingField:
+    <Frequency>k__BackingField: 0
+    <Amplitude>k__BackingField:
+      <Position0>k__BackingField: 0
+      <Position1>k__BackingField: 0
+      <Position2>k__BackingField: 0
+      <Position3>k__BackingField: 0
+      <Position4>k__BackingField: 0
+      <Position5>k__BackingField: 0
+      <Position6>k__BackingField: 0
+      <Position7>k__BackingField: 0
+      <Position8>k__BackingField: 0
+      <Position9>k__BackingField: 0
+  <MultiplePositionFeedback>k__BackingField:
+    <Strength>k__BackingField:
+      <Position0>k__BackingField: 0
+      <Position1>k__BackingField: 0
+      <Position2>k__BackingField: 0
+      <Position3>k__BackingField: 0
+      <Position4>k__BackingField: 0
+      <Position5>k__BackingField: 0
+      <Position6>k__BackingField: 0
+      <Position7>k__BackingField: 0
+      <Position8>k__BackingField: 0
+      <Position9>k__BackingField: 0
+  <SlopeFeedback>k__BackingField:
+    <StartPosition>k__BackingField: 0
+    <EndPosition>k__BackingField: 8
+    <StartStrength>k__BackingField: 8
+    <EndStrength>k__BackingField: 1
+  <Feedback>k__BackingField:
+    <Position>k__BackingField: 0
+    <Strength>k__BackingField: 0

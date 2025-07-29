@@ -1,0 +1,238 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1404538591981345
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4090748757063519}
+  - component: {fileID: 114242448437107670}
+  - component: {fileID: 114141983301490352}
+  - component: {fileID: 114794797447777229}
+  - component: {fileID: 114277782599605191}
+  - component: {fileID: 114226955096586990}
+  - component: {fileID: 114911893957201072}
+  m_Layer: 0
+  m_Name: CityDungeon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4090748757063519
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404538591981345}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114242448437107670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404538591981345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 25
+  radius: 55
+  dontBlockOtherSpawns: 0
+--- !u!114 &114141983301490352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404538591981345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 0
+  shapeFrequency: 1
+  roomFillSize: 1
+  pathFillSize: 6
+  defineShapeByRooms: 1
+  rectShaped: 1
+  tiles: 990100004a010000
+  roomShapeSpawnTemplate: {fileID: 0}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114794797447777229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404538591981345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 3
+    roomType: 4
+    amount:
+      min: 3
+      max: 3
+    size:
+      min: 4
+      max: 6
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+  - placement: 4
+    roomType: 25
+    amount:
+      min: 30
+      max: 30
+    size:
+      min: 3
+      max: 10
+    spacing:
+      min: 3
+      max: 10
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+--- !u!114 &114277782599605191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404538591981345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations:
+  - placement: 2
+    roomType: -1
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 0
+    intersectablePaths: -1
+    canIntersectRooms: 0
+    intersectableRooms: -1
+    straightPaths: 0
+    pathStartRoomType: 0
+    pathEndRoomType: 0
+    width: 2
+    helpNotes:
+--- !u!114 &114226955096586990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404538591981345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: 4
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: f653a2be12d436c4e9099fe55791cc4c, type: 2}
+  - flags: 52
+    minimumSizeRequirement: 6
+    templates:
+    - {fileID: 11400000, guid: 7b711954aa688fb4db302c8035b2e0b3, type: 2}
+    - {fileID: 11400000, guid: 9446bbd7676080141a06f124c7d15843, type: 2}
+    - {fileID: 11400000, guid: 9058e75b2cfe89a4daa22be027c88003, type: 2}
+  - flags: 52
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 9058e75b2cfe89a4daa22be027c88003, type: 2}
+  - flags: 8
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 120df9e72842bb14e8ef30f0473adbf7, type: 2}
+    - {fileID: 11400000, guid: 7b711954aa688fb4db302c8035b2e0b3, type: 2}
+  pathTemplates:
+  - flags: -1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: ca6bf6b12c2be904eb89e8d85a929dba, type: 2}
+--- !u!114 &114911893957201072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404538591981345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1929273357, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  groups:
+  - roomType: 16
+    numberToSpawn:
+      min: 2
+      max: 3
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/CityQuarters3.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/CityQuarters2.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/CityQuarters1.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/CityLibrary.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/CityDungeon/CityPark.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/BotanicGarden.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/CityPlaza.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/RemembranceHall.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/CityBath.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/CitySewers.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/CityHall.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/CityPassing.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/CityStore.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/SceneMakers/SMCityArchive.unity
+  scenesTable: {fileID: 11400000, guid: e229ac315f3fe754abb743f00e5c30fe, type: 2}

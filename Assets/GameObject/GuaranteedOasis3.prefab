@@ -1,0 +1,270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1193772925379931
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4606579904569319}
+  - component: {fileID: 114267705237421647}
+  - component: {fileID: 114596741417749271}
+  - component: {fileID: 114787497706484103}
+  - component: {fileID: 114167629671333584}
+  - component: {fileID: 114494896069705558}
+  - component: {fileID: 114983168782067989}
+  - component: {fileID: 114181910827566503}
+  m_Layer: 0
+  m_Name: GuaranteedOasis3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4606579904569319
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193772925379931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114267705237421647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193772925379931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 2
+  radius: 47
+  dontBlockOtherSpawns: 0
+--- !u!114 &114596741417749271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193772925379931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 0.27
+  shapeFrequency: 1
+  roomFillSize: 1
+  pathFillSize: 0
+  defineShapeByRooms: 0
+  rectShaped: 0
+  tiles: b60100006d010000
+  roomShapeSpawnTemplate: {fileID: 0}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114787497706484103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193772925379931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 1
+    roomType: 1
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 45
+      max: 45
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 2
+    roomType: 64
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 15
+      max: 15
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: 1
+    helpNotes:
+  - placement: 2
+    roomType: 128
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 15
+      max: 15
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: 1
+    helpNotes:
+--- !u!114 &114167629671333584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193772925379931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations: []
+--- !u!114 &114494896069705558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193772925379931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: 1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: ddbc01533ac22174d906d02b9d9b0920, type: 2}
+  - flags: 64
+    minimumSizeRequirement: 0
+    templates: []
+  - flags: 128
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: ddbc01533ac22174d906d02b9d9b0920, type: 2}
+  pathTemplates: []
+--- !u!114 &114983168782067989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193772925379931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1929273357, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  groups:
+  - roomType: 64
+    numberToSpawn:
+      min: 1
+      max: 1
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Oasis/OasisGrassTemple.unity
+  - roomType: 128
+    numberToSpawn:
+      min: 1
+      max: 1
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Oasis/OasisHouseAlt.unity
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/Oasis/OasisSceneAlt.unity
+  scenesTable: {fileID: 11400000, guid: e229ac315f3fe754abb743f00e5c30fe, type: 2}
+--- !u!114 &114181910827566503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193772925379931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1664008704, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  replacements:
+  - replaceID: 1311
+    replaceVariation:
+      hasValue: 0
+      value: 0
+    replaceWithID: 1311
+    advancedVariationControl: 1
+    variation:
+      min: 0
+      max: 0
+    weightedVariations:
+      value:
+      - value: 0
+        weight: 5
+      - value: 1
+        weight: 3
+      - value: 2
+        weight: 3
+      - value: 3
+        weight: 4
+      - value: 4
+        weight: 1
+  - replaceID: 1312
+    replaceVariation:
+      hasValue: 0
+      value: 0
+    replaceWithID: 1312
+    advancedVariationControl: 1
+    variation:
+      min: 0
+      max: 0
+    weightedVariations:
+      value:
+      - value: 0
+        weight: 4
+      - value: 1
+        weight: 3
+      - value: 2
+        weight: 3
+      - value: 3
+        weight: 2
+      - value: 4
+        weight: 3

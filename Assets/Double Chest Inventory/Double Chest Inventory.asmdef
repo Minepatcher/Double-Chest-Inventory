@@ -1,0 +1,22 @@
+{
+    "name": "Double Chest Inventory",
+    "rootNamespace": "",
+    "references": [
+        "PugMod.SDK",
+        "ExpandedChestUI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Pug.Base.dll",
+        "Pug.ECS.Authoring.dll",
+        "Pug.Other.dll",
+        "PugMod.SDK.Runtime.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1335647897912188
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4821856588674540}
+  - component: {fileID: 114662487239069118}
+  - component: {fileID: 114573314316443655}
+  - component: {fileID: 114231998429929312}
+  - component: {fileID: 114863054858229524}
+  - component: {fileID: 114472749531829903}
+  - component: {fileID: 114208395372829382}
+  m_Layer: 0
+  m_Name: SlimeBossDungeon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4821856588674540
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335647897912188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114662487239069118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335647897912188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 0
+  radius: 25
+  dontBlockOtherSpawns: 0
+--- !u!114 &114573314316443655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335647897912188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 0
+  shapeFrequency: 1
+  roomFillSize: 0
+  pathFillSize: 0
+  defineShapeByRooms: 1
+  rectShaped: 0
+  tiles: 900100002c010000
+  roomShapeSpawnTemplate: {fileID: 0}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114231998429929312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335647897912188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 1
+    roomType: 1
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 8
+      max: 8
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 3
+    roomType: 4
+    amount:
+      min: 2
+      max: 2
+    size:
+      min: 4
+      max: 6
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+  - placement: 4
+    roomType: 16
+    amount:
+      min: 4
+      max: 4
+    size:
+      min: 4
+      max: 8
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+  - placement: 3
+    roomType: 64
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 3
+      max: 3
+    spacing:
+      min: 3
+      max: 3
+    angle:
+      min: 45
+      max: 135
+    alignAngleWithCoreRadial: 1
+    straightPaths: 1
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+--- !u!114 &114863054858229524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335647897912188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations:
+  - placement: 2
+    roomType: -1
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 1
+    intersectablePaths: 0
+    canIntersectRooms: 0
+    intersectableRooms: 0
+    straightPaths: 0
+    pathStartRoomType: 0
+    pathEndRoomType: 0
+    width: 2
+    helpNotes:
+--- !u!114 &114472749531829903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335647897912188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: 4
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: da2dc668b7ebf1945ae8339eb96b656d, type: 2}
+  - flags: -1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: da2dc668b7ebf1945ae8339eb96b656d, type: 2}
+    - {fileID: 11400000, guid: 9d11b7352455400499a783efd851cf97, type: 2}
+  pathTemplates:
+  - flags: -1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 1d9ef4aff02a77a4992f3ee6ec5f242b, type: 2}
+--- !u!114 &114208395372829382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335647897912188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1929273357, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  groups:
+  - roomType: 1
+    numberToSpawn:
+      min: 1
+      max: 1
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/SlimeBossScene.unity
+  - roomType: 64
+    numberToSpawn:
+      min: 1
+      max: 1
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/WaypointScenes/WaypointRoomDirt.unity
+  scenesTable: {fileID: 11400000, guid: e229ac315f3fe754abb743f00e5c30fe, type: 2}

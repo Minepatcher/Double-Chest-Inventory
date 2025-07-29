@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1298439686514363
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4974357197956806}
+  - component: {fileID: 114995646597027418}
+  - component: {fileID: 114648043674965222}
+  - component: {fileID: 114438772535371639}
+  - component: {fileID: 114011495811688948}
+  - component: {fileID: 114827625064124291}
+  - component: {fileID: 114551243929064736}
+  m_Layer: 0
+  m_Name: MeadowArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4974357197956806
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298439686514363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114995646597027418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298439686514363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 85
+  radius: 25
+  dontBlockOtherSpawns: 0
+--- !u!114 &114648043674965222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298439686514363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 0.5
+  shapeFrequency: 1
+  roomFillSize: 0
+  pathFillSize: 0
+  defineShapeByRooms: 1
+  rectShaped: 0
+  tiles: 9f01000065010000
+  roomShapeSpawnTemplate: {fileID: 0}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114438772535371639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298439686514363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 1
+    roomType: 1
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 4
+      max: 7
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 4
+    roomType: 16
+    amount:
+      min: 4
+      max: 6
+    size:
+      min: 4
+      max: 7
+    spacing:
+      min: 1
+      max: 3
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 0
+    intersectableRooms: -1
+    helpNotes:
+--- !u!114 &114011495811688948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298439686514363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations:
+  - placement: 3
+    roomType: -1
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 0
+    intersectablePaths: 0
+    canIntersectRooms: 0
+    intersectableRooms: 0
+    straightPaths: 0
+    pathStartRoomType: 0
+    pathEndRoomType: 0
+    width: 3.3
+    helpNotes:
+--- !u!114 &114827625064124291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298439686514363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: 1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 4a5d78687cc05de4a851e6c9e014ef03, type: 2}
+    - {fileID: 11400000, guid: a15e1012a0514614ca3016079bae2455, type: 2}
+  - flags: 65534
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 292fae72e313c724991883fa2c7ac8ff, type: 2}
+  pathTemplates:
+  - flags: -1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 51a2c6c4b0ae5ae46aa6dfe8bced4713, type: 2}
+--- !u!114 &114551243929064736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298439686514363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1664008704, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  replacements:
+  - replaceID: 1300
+    replaceVariation:
+      hasValue: 0
+      value: 0
+    replaceWithID: 1300
+    advancedVariationControl: 1
+    variation:
+      min: 0
+      max: 0
+    weightedVariations:
+      value:
+      - value: 0
+        weight: 6
+      - value: 1
+        weight: 3
+      - value: 2
+        weight: 3
+      - value: 3
+        weight: 2
+      - value: 4
+        weight: 1
+  - replaceID: 1302
+    replaceVariation:
+      hasValue: 0
+      value: 0
+    replaceWithID: 1302
+    advancedVariationControl: 1
+    variation:
+      min: 0
+      max: 0
+    weightedVariations:
+      value:
+      - value: 0
+        weight: 5
+      - value: 1
+        weight: 3
+      - value: 2
+        weight: 3
+      - value: 3
+        weight: 3
+      - value: 4
+        weight: 2

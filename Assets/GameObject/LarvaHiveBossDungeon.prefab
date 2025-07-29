@@ -1,0 +1,321 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1654419339856658
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4662078670560036}
+  - component: {fileID: 114856846000758067}
+  - component: {fileID: 114844558934392250}
+  - component: {fileID: 114641577804317823}
+  - component: {fileID: 114850556645249922}
+  - component: {fileID: 114058691275205692}
+  - component: {fileID: 114838270146499402}
+  m_Layer: 0
+  m_Name: LarvaHiveBossDungeon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4662078670560036
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654419339856658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114856846000758067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654419339856658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 22
+  radius: 70
+  dontBlockOtherSpawns: 0
+--- !u!114 &114844558934392250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654419339856658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 0
+  shapeFrequency: 3
+  roomFillSize: 0.84
+  pathFillSize: 2.06
+  defineShapeByRooms: 1
+  rectShaped: 0
+  tiles: 9201000041010000
+  roomShapeSpawnTemplate: {fileID: 0}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114641577804317823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654419339856658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 1
+    roomType: 1
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 15
+      max: 15
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 1
+    intersectableRooms: -1
+    helpNotes:
+  - placement: 3
+    roomType: 4
+    amount:
+      min: 5
+      max: 5
+    size:
+      min: 11
+      max: 11
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+  - placement: 4
+    roomType: 64
+    amount:
+      min: 25
+      max: 25
+    size:
+      min: 5
+      max: 9
+    spacing:
+      min: 2
+      max: 6
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+  - placement: 2
+    roomType: 128
+    amount:
+      min: 20
+      max: 20
+    size:
+      min: 3
+      max: 3
+    spacing:
+      min: 2
+      max: 2
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 0
+    canIntersectOtherRooms: 0
+    intersectableRooms: 20
+    helpNotes:
+  - placement: 3
+    roomType: 256
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 3
+      max: 3
+    spacing:
+      min: 2
+      max: 2
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 0
+    intersectableRooms: 20
+    helpNotes:
+--- !u!114 &114850556645249922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654419339856658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations:
+  - placement: 2
+    roomType: 65406
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 0
+    intersectablePaths: 0
+    canIntersectRooms: 1
+    intersectableRooms: 128
+    straightPaths: 0
+    pathStartRoomType: 0
+    pathEndRoomType: 0
+    width: 3
+    helpNotes:
+  - placement: 5
+    roomType: 65407
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 0
+    intersectablePaths: 0
+    canIntersectRooms: 0
+    intersectableRooms: 0
+    straightPaths: 0
+    pathStartRoomType: 4
+    pathEndRoomType: 1
+    width: 4
+    helpNotes:
+  - placement: 2
+    roomType: 128
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 1
+    intersectablePaths: -1
+    canIntersectRooms: 1
+    intersectableRooms: 64
+    straightPaths: 0
+    pathStartRoomType: 4
+    pathEndRoomType: 1
+    width: 1.5
+    helpNotes:
+  - placement: 2
+    roomType: 256
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 1
+    intersectablePaths: -1
+    canIntersectRooms: 1
+    intersectableRooms: 192
+    straightPaths: 0
+    pathStartRoomType: 4
+    pathEndRoomType: 1
+    width: 1.5
+    helpNotes:
+--- !u!114 &114058691275205692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654419339856658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: 4
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: c6d8c97263e10054aa068ce14817db4c, type: 2}
+  - flags: 8
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 389c74fbf08a4334ea1a2eb1544d36af, type: 2}
+  - flags: 65376
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 8bd18393a58d23c4fa6190e698be338b, type: 2}
+    - {fileID: 11400000, guid: c3437789b90b6fb478484f459dfeef46, type: 2}
+    - {fileID: 11400000, guid: bd3623450cd12eb40ad808259efadd2f, type: 2}
+    - {fileID: 11400000, guid: eba28f8ae621b424abd08a358be4dfd6, type: 2}
+    - {fileID: 11400000, guid: d2a67a2f93f27b04b977360745a6eea3, type: 2}
+    - {fileID: 11400000, guid: ba36ba59252ed5845b8a8a1e321fe9e6, type: 2}
+    - {fileID: 11400000, guid: a5026a1262f963848ae9b3b3d3ccb715, type: 2}
+  pathTemplates:
+  - flags: 128
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: d7df33f905fbdfb4f8699074993c8fef, type: 2}
+  - flags: -1
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: daa24c4bb7928f643a1d5c1117c674b6, type: 2}
+--- !u!114 &114838270146499402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654419339856658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1929273357, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  groups:
+  - roomType: 1
+    numberToSpawn:
+      min: 1
+      max: 1
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/LarvaHiveBossScene.unity
+  - roomType: 256
+    numberToSpawn:
+      min: 1
+      max: 1
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/WaypointScenes/WaypointRoomHive.unity
+  scenesTable: {fileID: 11400000, guid: e229ac315f3fe754abb743f00e5c30fe, type: 2}

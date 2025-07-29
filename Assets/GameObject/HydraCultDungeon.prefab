@@ -1,0 +1,277 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1069687111141070
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4086748008734066}
+  - component: {fileID: 114754660866157804}
+  - component: {fileID: 114921731002182856}
+  - component: {fileID: 114722484964350580}
+  - component: {fileID: 114150109862543664}
+  - component: {fileID: 114340511608883155}
+  - component: {fileID: 114547430424407511}
+  m_Layer: 0
+  m_Name: HydraCultDungeon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4086748008734066
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069687111141070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114754660866157804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069687111141070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1246484133, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 160
+  radius: 25
+  dontBlockOtherSpawns: 0
+--- !u!114 &114921731002182856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069687111141070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1781620015, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  disable: 0
+  shapeAmplitude: 0
+  shapeFrequency: 1
+  roomFillSize: 0
+  pathFillSize: 0.01
+  defineShapeByRooms: 1
+  rectShaped: 1
+  tiles: 9d0100004e010000
+  roomShapeSpawnTemplate: {fileID: 0}
+  pathShapeSpawnTemplate: {fileID: 0}
+--- !u!114 &114722484964350580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069687111141070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1852301829, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  roomConfigurations:
+  - placement: 3
+    roomType: 4
+    amount:
+      min: 1
+      max: 2
+    size:
+      min: 3
+      max: 3
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+  - placement: 4
+    roomType: 16
+    amount:
+      min: 3
+      max: 5
+    size:
+      min: 3
+      max: 3
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 0
+    intersectableRooms: 0
+    helpNotes:
+  - placement: 4
+    roomType: 64
+    amount:
+      min: 3
+      max: 4
+    size:
+      min: 5
+      max: 5
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 0
+    intersectableRooms: 64
+    helpNotes:
+  - placement: 4
+    roomType: 8
+    amount:
+      min: 1
+      max: 1
+    size:
+      min: 5
+      max: 5
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 1
+    intersectableRooms: 4
+    helpNotes:
+  - placement: 0
+    roomType: 32768
+    amount:
+      min: 0
+      max: 3
+    size:
+      min: 5
+      max: 5
+    spacing:
+      min: 1
+      max: 1
+    angle:
+      min: 0
+      max: 360
+    alignAngleWithCoreRadial: 0
+    straightPaths: 1
+    canIntersectOtherRooms: 1
+    intersectableRooms: 65523
+    helpNotes:
+--- !u!114 &114150109862543664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069687111141070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1182930139, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathConfigurations:
+  - placement: 2
+    roomType: 32639
+    amount:
+      min: 0
+      max: 0
+    canIntersectPaths: 1
+    intersectablePaths: 0
+    canIntersectRooms: 1
+    intersectableRooms: 32768
+    straightPaths: 1
+    pathStartRoomType: 16
+    pathEndRoomType: 64
+    width: 3.7
+    helpNotes:
+--- !u!114 &114340511608883155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069687111141070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 668941711, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nodeTemplates:
+  - flags: 4
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: d1f8b322112b5d74cbbf0ac44f1ecf2c, type: 2}
+  - flags: 64
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: df4f86333e4c4f64da9234ced244e543, type: 2}
+  - flags: 16
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 596ecdb36ea472c4a8d5f52e3e319e9f, type: 2}
+  - flags: 32768
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 66f61948bc293d34c9d8244d445a4a98, type: 2}
+  - flags: 8
+    minimumSizeRequirement: 5
+    templates:
+    - {fileID: 11400000, guid: 51ad5e902db71674bb4e78fdaf2772ea, type: 2}
+  pathTemplates:
+  - flags: 32735
+    minimumSizeRequirement: 0
+    templates:
+    - {fileID: 11400000, guid: 76b487cd6580fae418768acb7ad9dbf9, type: 2}
+--- !u!114 &114547430424407511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069687111141070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1929273357, guid: 37558530dd7e9efe3477eadf888e39c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  groups:
+  - roomType: 16
+    numberToSpawn:
+      min: 0
+      max: 0
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/TestScenes/DesertDartRoomScene.unity
+  - roomType: 16
+    numberToSpawn:
+      min: 0
+      max: 0
+    scenes:
+    - scene:
+        scenePath: Assets/Scenes/CustomScenes/TestScenes/DesertUrnRoomScene.unity
+  scenesTable: {fileID: 11400000, guid: e229ac315f3fe754abb743f00e5c30fe, type: 2}
