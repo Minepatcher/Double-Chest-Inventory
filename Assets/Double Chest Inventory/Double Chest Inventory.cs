@@ -17,10 +17,11 @@ namespace Double_Chest_Inventory
             Debug.Log("[Double Chest Inventory]: Initializing...");
             var chestList = PugDatabase.entityMonobehaviours.Where(x => 
                 x.GameObject.name.Contains("chest", StringComparison.OrdinalIgnoreCase)
-                && !x.GameObject.name.Contains("locked", StringComparison.OrdinalIgnoreCase)
+                && !x.GameObject.TryGetComponent(out ChangeVariationWhenContainingObjectAuthoring _)
                 && x.ObjectInfo.prefabInfos?[0].prefab?.GetComponent<EntityMonoBehaviour>() is Chest
                 && x.GameObject.TryGetComponent(out InventoryAuthoring _)).ToList();
             foreach (var chest in chestList) {
+                //Debug.Log($"[Double Chest Inventory]: {chest}");
                 var invAuthoring = chest.GameObject.GetComponent<InventoryAuthoring>();
                 var totalSize = invAuthoring.sizeX * invAuthoring.sizeY;
                 var newTotalSize = totalSize * 2;

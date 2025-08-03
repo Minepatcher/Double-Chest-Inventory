@@ -22,15 +22,13 @@ MonoBehaviour:
     requiredOn: 0
     files:
     - path: Scripts/Double Chest Inventory.cs
-    - path: Bundles/Double Chest Inventory_Linux.assetbundle
-    - path: Bundles/Double Chest Inventory_Windows.assetbundle
     dependencies:
     - modName: ExpandedChestUI
       required: 1
   modPath: Assets\Double Chest Inventory
-  forceReimport: 1
-  buildBundles: 1
-  cacheBundles: 1
-  buildLinux: 1
+  forceReimport: 0
+  buildBundles: 0
+  cacheBundles: 0
+  buildLinux: 0
   assets: []
-  lastBuildLinux: 1
+  lastBuildLinux: 0
