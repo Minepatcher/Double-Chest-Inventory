@@ -2,7 +2,9 @@ using System;
 using System.Linq;
 using Inventory;
 using PugMod;
+using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
+using Unity.NetCode;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -57,10 +59,29 @@ namespace Double_Chest_Inventory
     }
     
     [WorldSystemFilter(WorldSystemFilterFlags.ServerSimulation)]
-    [UpdateInGroup(typeof (InventorySystemGroup))]
+    [UpdateInGroup(typeof (InventorySystemGroup), OrderLast = true)]
     [UpdateAfter(typeof (InventoryUpdateSystem))]
     public struct DoubleChestInventoryServerSystem
     {
         
+    }
+    
+    [WorldSystemFilter(WorldSystemFilterFlags.ClientSimulation)]
+    [UpdateInGroup(typeof(InventorySystemGroup), OrderLast = true)]
+    [UpdateAfter(typeof(InventoryUpdateSystem))]
+    public partial class InvertPlayerMovementSystem : SystemBase
+    {
+        protected override void OnUpdate()
+        {
+            foreach (var clientInputData in
+                     SystemAPI.Query<RefRW<ClientInputData>>().WithAll<GhostOwnerIsLocal>()) // GhostOwnerIsLocal => this is the local player
+            {
+                // ClientInputData used to avoid unnecessary bytes being sent. ClientInput is set in the PredictedSimulattionSystemGroup from current tick.
+                // Outside of PredictedSimulationSystemGroup, ClientInputData has to be used to get and set this frames input data.
+                var clientInput = UnsafeUtility.As<ClientInputData, ClientInput>(ref clientInputData.ValueRW);
+                clientInput.movementDirection *= -1f;
+                clientInputData.ValueRW = UnsafeUtility.As<ClientInput, ClientInputData>(ref clientInput);
+            }
+        }
     }
 }
