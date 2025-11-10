@@ -22,9 +22,7 @@ MonoBehaviour:
     requiredOn: 0
     files:
     - path: Scripts/Double Chest Inventory.cs
-    dependencies:
-    - modName: ExpandedChestUI
-      required: 1
+    dependencies: []
   modPath: Assets\Double Chest Inventory
   forceReimport: 0
   buildBundles: 0
