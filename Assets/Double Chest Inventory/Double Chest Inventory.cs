@@ -1,10 +1,7 @@
 using System;
 using System.Linq;
-using Inventory;
+using HarmonyLib;
 using PugMod;
-using Unity.Collections.LowLevel.Unsafe;
-using Unity.Entities;
-using Unity.NetCode;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -13,75 +10,64 @@ namespace Double_Chest_Inventory
     public class DoubleChestInventory : IMod
     {
         public void EarlyInit() { }
+        public void Init() { }
+        public void Shutdown() { }
+        public void ModObjectLoaded(Object obj) { }
+        public void Update() { }
+    }
 
-        public void Init()
+    [HarmonyPatch]
+    // ReSharper disable once InconsistentNaming
+    public static class ECSManagerPatch
+    {
+        [HarmonyPatch(typeof(ECSManager), nameof(ECSManager.Init))]
+        [HarmonyPrefix]
+        // ReSharper disable once InconsistentNaming
+        public static void ECSManager_Init(ECSManager __instance)
         {
             Debug.Log("[Double Chest Inventory]: Initializing...");
-            var chestList = PugDatabase.entityMonobehaviours.Where(x => 
-                x.GameObject.name.Contains("chest", StringComparison.OrdinalIgnoreCase)
-                && !x.GameObject.TryGetComponent(out ChangeVariationWhenContainingObjectAuthoring _)
-                && x.ObjectInfo.prefabInfos?[0].prefab?.GetComponent<EntityMonoBehaviour>() is Chest
-                && x.GameObject.TryGetComponent(out InventoryAuthoring _));
-            //var chestList = ;
-            foreach (var chest in chestList) {
-                Debug.Log($"[Double Chest Inventory]: {chest}");
-                var invAuthoring = chest.GameObject.GetComponent<InventoryAuthoring>();
+            var chestList = Manager.ecs.pugDatabase.prefabList.Where(x =>
+                x.name.Contains("chest", StringComparison.OrdinalIgnoreCase)
+                && !x.TryGetComponent(out ChangeVariationWhenContainingObjectAuthoring _)
+                && x.GetComponent<EntityMonoBehaviourData>().ObjectInfo.prefabInfos?[0].prefab
+                    ?.GetComponent<EntityMonoBehaviour>() is Chest
+                && x.TryGetComponent(out InventoryAuthoring _));
+            foreach (var chest in chestList)
+            {
+                //Debug.Log($"[Double Chest Inventory]: {chest}");
+                var invAuthoring = chest.GetComponent<InventoryAuthoring>();
                 int totalSize = invAuthoring.sizeX * invAuthoring.sizeY;
                 int newTotalSize = totalSize * 2;
-                if (newTotalSize > 135) {
+                if (newTotalSize > 135)
+                {
                     invAuthoring.sizeX = 15;
                     invAuthoring.sizeY = 9;
                     continue;
                 }
+
                 int newXSize = invAuthoring.sizeX;
                 int newYSize = invAuthoring.sizeY;
                 bool noSizeFound = true;
                 int i = 15;
-                while (noSizeFound) { 
+                while (noSizeFound)
+                {
                     if (newTotalSize % i == 0 && newTotalSize / i <= 9)
                     {
                         newXSize = i;
                         newYSize = newTotalSize / i;
                         noSizeFound = false;
-                    } else {
+                    }
+                    else
+                    {
                         --i;
                     }
                 }
+
                 invAuthoring.sizeX = newXSize;
                 invAuthoring.sizeY = newYSize;
             }
-            Debug.Log("[Double Chest Inventory]: Finished Doubling Chest Inventory Size...");
-        }
 
-        public void Shutdown() { }
-        public void ModObjectLoaded(Object obj) { }
-        public void Update() { }
-    }
-    
-    [WorldSystemFilter(WorldSystemFilterFlags.ServerSimulation)]
-    [UpdateInGroup(typeof (InventorySystemGroup), OrderLast = true)]
-    [UpdateAfter(typeof (InventoryUpdateSystem))]
-    public struct DoubleChestInventoryServerSystem
-    {
-        
-    }
-    
-    [WorldSystemFilter(WorldSystemFilterFlags.ClientSimulation)]
-    [UpdateInGroup(typeof(InventorySystemGroup), OrderLast = true)]
-    [UpdateAfter(typeof(InventoryUpdateSystem))]
-    public partial class InvertPlayerMovementSystem : SystemBase
-    {
-        protected override void OnUpdate()
-        {
-            foreach (var clientInputData in
-                     SystemAPI.Query<RefRW<ClientInputData>>().WithAll<GhostOwnerIsLocal>()) // GhostOwnerIsLocal => this is the local player
-            {
-                // ClientInputData used to avoid unnecessary bytes being sent. ClientInput is set in the PredictedSimulattionSystemGroup from current tick.
-                // Outside of PredictedSimulationSystemGroup, ClientInputData has to be used to get and set this frames input data.
-                var clientInput = UnsafeUtility.As<ClientInputData, ClientInput>(ref clientInputData.ValueRW);
-                clientInput.movementDirection *= -1f;
-                clientInputData.ValueRW = UnsafeUtility.As<ClientInput, ClientInputData>(ref clientInput);
-            }
+            Debug.Log("[Double Chest Inventory]: Finished Doubling Chest Inventory Size...");
         }
     }
 }
