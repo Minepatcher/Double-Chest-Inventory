@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using HarmonyLib;
 using PugMod;
@@ -21,17 +20,20 @@ namespace Double_Chest_Inventory
     public static class ECSManagerPatch
     {
         [HarmonyPatch(typeof(ECSManager), nameof(ECSManager.Init))]
-        [HarmonyPrefix]
+        [HarmonyPostfix]
         // ReSharper disable once InconsistentNaming
         public static void ECSManager_Init(ECSManager __instance)
         {
             Debug.Log("[Double Chest Inventory]: Initializing...");
-            var chestList = Manager.ecs.pugDatabase.prefabList.Where(x =>
-                x.name.Contains("chest", StringComparison.OrdinalIgnoreCase)
-                && !x.TryGetComponent(out ChangeVariationWhenContainingObjectAuthoring _)
-                && x.GetComponent<EntityMonoBehaviourData>().ObjectInfo.prefabInfos?[0].prefab
-                    ?.GetComponent<EntityMonoBehaviour>() is Chest
-                && x.TryGetComponent(out InventoryAuthoring _));
+            var chestList = PugDatabase.entityMonobehaviours
+                .Select(monoBehaviour => monoBehaviour.GameObject)
+                .Where(monoBehaviour =>
+                !monoBehaviour.TryGetComponent(out ChangeVariationWhenContainingObjectAuthoring _)
+                && monoBehaviour.TryGetComponent(out InventoryAuthoring inv)
+                && inv.sizeX > 2 && inv.sizeY > 2
+                && (monoBehaviour.TryGetComponent(out EntityMonoBehaviourData e)
+                    ? e.ObjectInfo.prefabInfos?[0].prefab?.GetComponent<EntityMonoBehaviour>() is Chest
+                    : monoBehaviour.TryGetComponent(out ObjectAuthoring o) && o.graphicalPrefab?.GetComponent<EntityMonoBehaviour>() is Chest));
             foreach (var chest in chestList)
             {
                 //Debug.Log($"[Double Chest Inventory]: {chest}");
