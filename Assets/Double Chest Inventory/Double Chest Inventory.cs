@@ -40,9 +40,9 @@ namespace Double_Chest_Inventory
                 var invAuthoring = chest.GetComponent<InventoryAuthoring>();
                 int totalSize = invAuthoring.sizeX * invAuthoring.sizeY;
                 int newTotalSize = totalSize * 2;
-                if (newTotalSize > 135)
+                if (newTotalSize > 144)
                 {
-                    invAuthoring.sizeX = 15;
+                    invAuthoring.sizeX = 16;
                     invAuthoring.sizeY = 9;
                     continue;
                 }
@@ -50,7 +50,7 @@ namespace Double_Chest_Inventory
                 int newXSize = invAuthoring.sizeX;
                 int newYSize = invAuthoring.sizeY;
                 bool noSizeFound = true;
-                int i = 15;
+                int i = 16;
                 while (noSizeFound)
                 {
                     if (newTotalSize % i == 0 && newTotalSize / i <= 9)
