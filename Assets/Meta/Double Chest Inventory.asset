@@ -15,6 +15,7 @@ MonoBehaviour:
   metadata:
     guid: 39d469aed71640a78df86a3feed192ed
     name: Double Chest Inventory
+    displayName: 
     skipSafetyChecks: 0
     disableScripts: 0
     accessesExtraAssemblies: 1
@@ -22,7 +23,10 @@ MonoBehaviour:
     requiredOn: 0
     files:
     - path: Scripts/Double Chest Inventory.cs
-    dependencies: []
+      guid: 7a99e9e27c37f09489c7ad2ad4da9618
+    dependencies:
+    - modName: ExpandedChestUI
+      required: 1
   modPath: Assets\Double Chest Inventory
   forceReimport: 0
   buildBundles: 0

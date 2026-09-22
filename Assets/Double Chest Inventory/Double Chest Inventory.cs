@@ -15,28 +15,44 @@ namespace Double_Chest_Inventory
         public void Update() { }
     }
 
+    public class Logger
+    {
+        private readonly string _tag;
+        public Logger(string tag) => _tag = $"[{tag}]";
+        public void LogInfo(string text) => Debug.unityLogger.Log(LogType.Log, _tag, text);
+        public void LogWarning(string text) => Debug.unityLogger.Log(LogType.Warning, _tag, text);
+        public void LogError(string text) => Debug.unityLogger.Log(LogType.Error, _tag, text);
+    }
+
     [HarmonyPatch]
     // ReSharper disable once InconsistentNaming
     public static class ECSManagerPatch
     {
+        public const string Version = "0.3.0";
+        public const string ModID = "DoubleChestInventoryMod";
+        public const string FriendlyName = "Double Chest Inventory Mod";
+        internal static readonly Logger Log = new(FriendlyName);
+
         [HarmonyPatch(typeof(ECSManager), nameof(ECSManager.Init))]
         [HarmonyPostfix]
         // ReSharper disable once InconsistentNaming
         public static void ECSManager_Init(ECSManager __instance)
         {
-            Debug.Log("[Double Chest Inventory]: Initializing...");
+            Log.LogInfo($"v{Version}");
+            Log.LogInfo("Initializing...");
             var chestList = PugDatabase.entityMonobehaviours
                 .Select(monoBehaviour => monoBehaviour.GameObject)
                 .Where(monoBehaviour =>
-                !monoBehaviour.TryGetComponent(out ChangeVariationWhenContainingObjectAuthoring _)
-                && monoBehaviour.TryGetComponent(out InventoryAuthoring inv)
-                && inv.sizeX > 2 && inv.sizeY > 2
-                && (monoBehaviour.TryGetComponent(out EntityMonoBehaviourData e)
-                    ? e.ObjectInfo.prefabInfos?[0].prefab?.GetComponent<EntityMonoBehaviour>() is Chest
-                    : monoBehaviour.TryGetComponent(out ObjectAuthoring o) && o.graphicalPrefab?.GetComponent<EntityMonoBehaviour>() is Chest));
+                    !monoBehaviour.TryGetComponent(out ChangeVariationWhenContainingObjectAuthoring _)
+                    && monoBehaviour.TryGetComponent(out InventoryAuthoring inv)
+                    && inv.sizeX > 2 && inv.sizeY > 2
+                    && (monoBehaviour.TryGetComponent(out EntityMonoBehaviourData e)
+                        ? e.ObjectInfo.prefabInfo.GetGraphical().GetComponent<EntityMonoBehaviour>() is Chest
+                        : monoBehaviour.TryGetComponent(out ObjectAuthoring o) &&
+                          o.graphicalPrefab?.GetComponent<EntityMonoBehaviour>() is Chest));
             foreach (var chest in chestList)
             {
-                //Debug.Log($"[Double Chest Inventory]: {chest}");
+                //Log.LogInfo($"{chest}");
                 var invAuthoring = chest.GetComponent<InventoryAuthoring>();
                 int totalSize = invAuthoring.sizeX * invAuthoring.sizeY;
                 int newTotalSize = totalSize * 2;
@@ -68,8 +84,7 @@ namespace Double_Chest_Inventory
                 invAuthoring.sizeX = newXSize;
                 invAuthoring.sizeY = newYSize;
             }
-
-            Debug.Log("[Double Chest Inventory]: Finished Doubling Chest Inventory Size...");
+            Log.LogInfo("Finished Doubling Chest Inventory Size...");
         }
     }
 }
